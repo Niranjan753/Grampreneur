@@ -20,8 +20,8 @@ jobs:
       - name: Install dependencies
         run: |
           cd frontend
-          npm install
-          npm install next@latest
+          npm ci
+          npm install next@14.2.7 --save-exact
 
       - name: Build and Export
         run: |
